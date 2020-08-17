@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class BinaryRepresentation {
+	static int find(int n) {
+		if (n == 0)
+			return 0;
+
+		else
+
+			return (n % 2 + 10 * find(n / 2));
+	}
+
+	// Driver Code
+	public static void main(String args[]) {
+		System.out.println("Number to Represent in Binary Way : ");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		sc.close();
+		System.out.println(find(n));
+	}
+}
