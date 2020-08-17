@@ -1,0 +1,21 @@
+//all about Insertion sort
+import java.util.Collections;
+import java.util.Scanner;
+import java.util.Vector;
+
+public class InsertionSortMethod {
+	public static void main(String[] args) {
+		// Implementing InsertionSort Method to sort the elements in the array
+		Vector<Integer> vec = new Vector<>();
+		int n;
+		Scanner sc = new Scanner(System.in);
+		n = sc.nextInt();
+		for (int i = 0; i < n; i++) {
+			int k = sc.nextInt();
+			vec.add(k);
+		}
+		sc.close();
+		Collections.sort(vec);
+		System.out.println(vec);
+	}
+}
